@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .main {
+            width: 50%;
+        }
+
+        .header-text {
+            color: rgb(67, 136, 241);
+            border-left: 5px solid red;
+            padding-left: 10px;
+        }
+
+        .header-text__notrequired {
+            color: rgb(67, 136, 241);
+            font-style: italic;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .header-hr {
+            width: 250px;
+            height: 1px;
+            background-color: #ccc;
+            display: inline-block;
+            align-self: center;
+            padding: 0 10px;
+        }
+
+        button {
+            outline: none;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            padding: 7px 10px;
+            cursor: pointer;
+        }
+
+        .header-button {
+            padding: 5px 10px;
+            background-color: #fff;
+            border-width: 3px;
+        }
+
+        option[disabled] {
+            display: none;
+        }
+        
+        .form1-select-language {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .form1-select-ability {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .form1-input-tick {
+            grid-template-columns: 70px 70px 70px 70px 70px;
+            display: grid;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .form1-tick-first {
+            /* grid-column: 1 / span 2; */
+            text-align: center;
+        }
+
+        .form1-grid-item {
+            text-align: center;
+        }
+
+        .form-grid-title-item {
+            text-align: right;
+        }
+
+        .form1-save {
+            background-color: red;
+            color: white;
+            padding: 7px 15px;
+            border: 1px solid red;
+        }
+
+        .form1-dontsave {
+            background-color: #9b9b9b;
+            border: 1px solid #9b9b9b;
+            color: white;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        .form2-input-tick {
+            display: grid;
+            grid-template-columns: 120px 70px 70px 70px 70px;
+            font-size: 12px;
+        }
+
+        .form2-grid-title-item {
+            text-align: right;
+        }
+
+        .form2-grid-item {
+            text-align: center;
+        }
+
+        .form2-label {
+            text-align: right;
+        }
+
+        .form2-input-text {
+            width: 100%;
+            padding: 7px;
+        }
+
+        .form3-save {
+            background-color: red;
+            color: white;
+        }
+
+        .form3-dontsave {
+            color: white;
+            background-color: #9b9b9b;
+            border: 1px solid #9b9b9b;
+        }
+
+        input[type="text"], textarea {
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+    
+        <div class="header">
+
+            <h4 class="header-text">Ngoại ngữ & Tin học 
+                <span class="header-text__notrequired">(không bắt buộc)</span>
+                <span class="header-hr"></span>
+                <button class="header-button">Rút gọn  <i class="fa-solid fa-chevron-up"></i></button>
+            </h4>
+            
+        </div>
+
+        <form action="">
+
+            <div class="form1">
+
+                <table>
+                    <tr align="right">
+                        <td width="200px">
+                            <label for="" class="form1-label">Ngoại ngữ</label>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form1-select-language">
+                                <option value="" disabled selected>Chọn ngoại ngữ</option>
+                                <option value="">Tiếng Anh</option>
+                                <option value="">Tiếng Nhật</option>
+                                <option value="">Tiếng Trung</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr align="right">
+                        <td>
+                            <label for="" class="form1-label">Trình độ</label>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form1-select-ability">
+                                <option value="" disabled selected>Chọn trình độ</option>
+                                <option value="">Cao đẳng</option>
+                                <option value="">Đại học</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="form1-input-tick">
+                                <span></span>
+                                <span class="form1-tick-first">Tốt</span>
+                                <span class="form1-grid-item">Khá</span>
+                                <span class="form1-grid-item">Trung bình</span>
+                                <span class="form1-grid-item">Kém</span>
+                                <span class="form-grid-title-item">Nghe</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <span class="form-grid-title-item">Nói</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <span class="form-grid-title-item">Đọc</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <span class="form-grid-title-item">Viết</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="form1-button">
+                                <button class="form1-save">
+                                    <i class="fa-regular fa-floppy-disk"></i>Lưu
+                                </button>
+                                <button class="form1-dontsave">
+                                    <i class="fa-solid fa-xmark"></i>Không lưu
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <hr>
+            <div class="form2">
+
+                <table>
+                    <tr>
+                        <td width="200px" align="right">
+                            <label for="" class="form2-label">Tin học văn phòng</label>
+                        </td>
+                        <td>
+                            <div class="form2-input-tick">
+                                <span></span>
+                                <span class="form2-grid-item">Tốt</span>
+                                <span class="form2-grid-item">Khá</span>
+                                <span class="form2-grid-item">Trung bình</span>
+                                <span class="form2-grid-item">Kém</span>
+                                <span class="form2-grid-title-item">MS Word</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <span class="form2-grid-title-item">MS Excel</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <span class="form2-grid-title-item">MS Power Point</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <span class="form2-grid-title-item">MS Outlook</span>
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr align="right">
+                        <td>
+                            <label for="" class="form2-label">Phần mềm khác</label>
+                        </td>
+                        <td><input type="text" name="" id="" class="form2-input-text"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <hr>
+            <div class="form3">
+
+                <table>
+                    <tr>
+                        <td>
+                            <label for="" class="form3-label">Các thành tích học tập nổi bật khác</label>
+                        </td>
+                        <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="form3-input-button">
+                                <button class="form3-save">
+                                    <i class="fa-regular fa-floppy-disk"></i>Lưu
+                                </button>
+                                <button class="form3-dontsave">
+                                    <i class="fa-solid fa-xmark"></i>Không lưu
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

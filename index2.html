@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        justify-content: center;
+        display: flex;
+    }
+    h4{
+        text-transform: capitalize;
+    }
+    #main{
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 10px 10px;
+    }
+    .text-center{
+        text-align: center;
+        color: green;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    .form{
+        row-gap: 15px;
+    }
+    .form-button{
+        margin: 0 auto;
+        margin: 5px 0px;
+    }
+</style>
+<body>
+    <div id="main">
+        <h4 class="text-center">application form</h4>
+        <hr>
+        <div class="form">
+            <div class="form-name">
+                <label for="">Name: </label>
+                <input type="text">
+            </div>
+            <div class="form-field">
+                <h4>area of interest</h4>
+                <input type="radio">
+                <label for="">Web Designer</label>
+                <input type="radio">
+                <label for="">Web Administrator</label>
+                <input type="radio">
+                <label for="">Web Developer</label>
+            </div>
+            <div class="form-experience">
+                <label for="">Experience</label>
+                <select name="" id="">
+                    <option value="">None</option>
+                    <option value="">Used to experience</option>
+                </select>
+            </div>
+            <div class="form-comment">
+                <h4>comments</h4>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Type your comment here."></textarea>
+            </div>
+            <div class="form-checkbox">
+                <input type="checkbox">
+                <label for="">Send acknowledgement</label>
+
+            </div>
+            <div class="form-button">
+                <button>OK</button>
+                <button>RESET</button>
+            </div>
+
+        </div>
+    </div>
+     
+</body>
+</html>

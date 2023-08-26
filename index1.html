@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0 auto;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #main{
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 300px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    h2{
+        text-transform: uppercase;
+    }
+    .form-button button{
+        text-transform: uppercase;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+        margin-left: 35px;
+    }
+    input, textarea, select {
+        border-radius: 7px
+    }
+   
+    
+
+</style>
+<body>
+   <div id="main">
+        <h2>application form</h2> 
+        <div class="form">
+            <div class="form-name">
+                <label for="">First Name</label>
+                <input type="text">
+            </div>
+            <div class="form-education">
+                <label for="">Education</label>
+                <input type="checkbox">
+                <label for="">Graduate</label>
+                <input type="checkbox">
+                <label for="">Post graduate</label>
+            </div>
+            <div class="form-gender">
+                <label for="">Gender</label>
+                <input type="radio" name="gender" >
+                <label for="">Male</label>
+                <input type="radio" name="gender">
+                <label for="">Female</label>
+            </div>
+            <div class="form-salary">
+                <label for="">Salary</label>
+                <input type="text">
+            </div>
+            <div class="form-remarks">
+                <label for="">Remarks</label>
+                <textarea name="" id="" cols="25" rows="3" placeholder="Type your text here"></textarea>            
+            </div>
+            <div class="form-country">
+                <label for="">Country</label>
+                <select name="" id="">
+                    <option value="">Australia</option>
+                    <option value="">Viet Nam</option>
+                    <option value="">England</option>
+                </select>
+            </div>
+            <div class="form-button">
+                <button>submit</button>
+                <button>reset</button>
+            </div>
+        </div>
+   </div>   
+</body>
+</html>

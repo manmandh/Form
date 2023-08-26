@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        width: 40%;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        width: 25%;
+    }
+    .form-click{
+        display: flex;
+    }
+    .click-flex{
+        margin-left: 10px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: blue;
+    }
+    input[type="text"],input[type="password"]{
+        width: 100%;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+    }
+    .form-button button{
+        width: 100%;
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 5px;
+    }
+    .form-option select{
+        padding: 10px;
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+
+
+
+</style>
+<body>
+    <div class="form">
+        <h2>Đăng ký</h2>
+        <div class="form-name">
+            <input type="text" name="" id="" placeholder="Tên truy cập">
+        </div>
+        <div class="form-password">
+            <input type="password" name="" id="" placeholder="Mật khẩu">
+        </div>
+        <div class="form-repassword">
+            <input type="password" name="" id="" placeholder="Nhập lại mật khẩu">
+        </div>
+        <div class="form-email">
+            <input type="text" name="" id="" placeholder="Email">
+            <p>bạn cần sử dụng email này trong trường hợp cài đặt mật khẩu</p>
+        </div>
+        <div class="form-option">
+            <select name="" id="">
+                <option value="">Việt Nam(Việt Nam)</option>
+                <option value="">Đài Loan</option>  
+                <option value="">England</option>
+            </select>
+        </div>
+        <div class="form-click">
+            <input type="checkbox">
+            <div class="click-flex">
+                <p>Tôi đồng ý với <a href="">Điều Khoản Dịch Vụ</a> và <a href="">Chính Sách Bảo Mật</a></p>
+            </div>
+        </div>
+        <div class="form-button">
+            <button>Đăng ký ngay</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            width: 50%;
+        }
+
+        .header-text {
+            color: #00aefd;
+            border-left: 5px solid red;
+            padding-left: 10px;
+        }
+
+        .header-text__notrequired {
+            font-style: italic;
+        }
+
+        .header-hr {
+            width: 300px;
+            height: 1px;
+            background-color: #ccc;
+            display: inline-block;
+        }
+
+        .header-button {
+            padding: 5px 10px;
+            color: #787878;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 200px auto;
+            gap: 10px 0;
+        }
+
+        .form-label {
+            text-align: right;
+            padding: 7px 10px;
+        }
+
+        .form-important {
+            color: red;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .form-save {
+            background-color: red;
+            padding: 7px 15px;
+            color: #fff;
+            border: 1px solid red;
+        }
+
+        .form-dontsave {
+            background-color: #787878;
+            padding: 7px 10px;
+            color: #fff;
+            border: 1px solid #787878;
+        }
+
+        .footer-label {
+            font-size: 13px;
+        }
+
+        .footer-button {
+            text-align: center;
+        }
+
+        .footer-preview {
+            background-color: #fff;
+            color: red;
+            padding: 7px 30px;
+            font-weight: 700;
+            border: 1px solid #ccc;
+        }
+
+        .footer-save {
+            background-color: red;
+            padding: 7px 30px;
+            color: #fff;
+            border: 1px solid red;
+            font-weight: 700;
+        }
+
+        button {
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="header">
+            <h4 class="header-text">
+                Tham khảo
+                <span class="header-text__notrequired"> (không bắt buộc)</span>
+                <span class="header-hr"></span>
+                <button class="header-button">
+                    Rút gọn  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+            </h4>
+        </div>
+
+        <form action="#">
+
+            <div class="form-label"><label for="">Người tham khảo</label><span class="form-important">*</span></div>
+            <input type="text" class="form-input">
+            <div class="form-label"><label for=""></label>Chức danh<span class="form-important">*</span></div>
+            <input type="text" class="form-input">
+            <div class="form-label"><label for="">Tên công ty</label><span class="form-important">*</span></div>
+            <input type="text" class="form-input">
+            <div class="form-label"><label for="">Email</label><span class="form-important">*</span></div>
+            <input type="text" class="form-input">
+            <div class="form-label"><label for="">Số điện thoại</label><span class="form-important">*</span></div>
+            <input type="text" class="form-input">
+            <div></div>
+            <div class="form-button">
+                <button class="form-save">
+                    <i class="fa-regular fa-floppy-disk"></i>    Lưu
+                </button>
+                <button class="form-dontsave">
+                    <i class="fa-solid fa-xmark"></i>     Không lưu
+                </button>
+            </div>
+        </form> 
+
+        <footer>
+            <div class="footer-accept">
+                <input type="radio" name="condition" id="accept1">
+                <label for="accept1" class="footer-label">Cho phép Nhà tuyển dụng tìm kiếm thông tin của bạn và chủ động liên hệ
+                    mời phỏng vấn
+                </label>
+            </div>
+            <div class="footer-noaccept">
+                <input type="radio" name="condition" id="accept2">
+                <label for="accept2" class="footer-label">Không cho phép nhà tuyển dụng tìm kiếm. Hồ sơ này chỉ
+                    để ứng tuyển
+                </label>
+            </div>
+            <div class="footer-button">
+                <button class="footer-preview">
+                    <i class="fa-regular fa-eye"></i>    Xem trước
+                </button>
+                <button class="footer-save">
+                    <i class="fa-regular fa-floppy-disk"></i>    Lưu hồ sơ
+                </button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        display: flex;
+        column-gap: 5px;
+        width: 50%;
+    }
+    .main-left{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .main-left p{
+        margin-left: 10px;
+        font-size: 18px;
+        width: 400px;
+    }
+    #form{
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-right{
+        padding: 10px;
+        justify-content: center;
+    }
+    .form-click-fb1{
+        padding-top: 15px;
+    }
+    .form-click-fb2{
+        padding-top: 10px;
+    }
+    .button-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-1 button{
+        color: white;
+        background-color: rgba(24, 95, 249, 0.91);
+        border: none;
+        outline: none;
+        padding: 10px;
+    }
+    .button-2 button{
+        color: white;
+        background-color: green;
+        border: none;
+        margin-left: 55px;
+        padding: 10px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 10px;
+    }
+    input[type="text"], input[type="password"]{
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        margin: 3px 5px;
+        padding: 10px;
+        width: 100%;
+    }
+    ::placeholder{
+        color: rgba(0, 0, 0, 0.518);
+    }
+    .form-footer{
+        padding-top: 15px;
+        font-size: 12px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="main-left">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" width=25%>
+                <p>Facebook giúp bạn kết nối và chia sẻ với
+                mọi người trong cuộc sống của bạn</p>
+        </div>
+        <div class="main-right">
+            <div id="form">
+                <div class="form-email">
+                    <input type="text" placeholder="Email hoặc số điện thoại">
+                </div>
+                <div class="form-pasword">
+                    <input type="password" placeholder="Mật khẩu">
+                </div>
+                <div class="form-click-fb1">
+                    <div class="button-1">
+                        <button>Đăng nhập</button>
+                        <a href="">Quên mật khẩu?</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-click-fb2">
+                    <div class="button-2">
+                        <button>Tạo tài khoản mới</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="form-footer">
+                <p><b>Tạo Trang</b> dành cho người nổi tiếng, thương hiệu hoặc doanh nghiệp.</p>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>

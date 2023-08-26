@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+        
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .main {
+            width: 70%;
+        }
+
+        .header {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .header-info {
+            border-left: 5px solid red;
+            color: #1092ea;
+            padding-left: 10px;
+        }
+
+        .header-info__required {
+            color: #1092ea;
+            font-style: italic;
+        }
+
+        .header-hr {
+            height: 1px;
+            width: calc(70% - 130px);
+            background-color: #979393;
+            align-self: center;
+        }
+
+        .header-button {
+            height: 50%;
+            align-self: center;
+            background-color: #fff;
+            border: 2px solid rgb(175, 175, 173);
+            border-radius: 5px;
+            color: rgb(122, 122, 121);
+        }
+
+        .form {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .form-info {
+            width: 100%;
+        }
+
+        .form-img {
+            display: flex;
+            flex-direction: column;
+            max-width: 120px;
+        }
+
+        .form-img-container {
+            padding: 50px 0;
+            max-width: 120px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #e1dfdf;
+            color: #969595;
+            border-radius: 3px;
+        }
+
+        .form-img-button {
+            color: #f5f5f5;
+            background-color: #464545;
+            margin-top: 5px;
+            padding: 5px 0;
+            border-radius: 3px;
+        }
+
+        .form-info-name__important {
+            color: red;
+            font-weight: 900;
+        }
+
+        label {
+            display: inline-block;
+            text-align: right;
+            width: 25%;
+            padding: 5px 0;
+            color: #7a7a7a;
+            font-size: 16px;
+        }
+
+        .form-info-name {
+            width: 100%;
+        }
+
+        .form-info-input {
+            width: 70%;
+            float: right;
+            padding: 5px;
+        }
+
+        .form-info-select {
+            width: 60px;
+            outline: none;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            color: #7a7a7a;
+            padding: 2px;
+        }
+
+        .info-gender {
+            width: 70%;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            color: #7a7a7a;
+            padding: 2px;
+        }
+
+        .info-love {
+            width: 70%;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            color: #7a7a7a;
+            padding: 2px;
+        }
+
+        .info-city {
+            width: 70%;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            color: #7a7a7a;
+            padding: 2px;
+        }
+
+        .form-info-save {
+            margin-left: 30%;
+        }
+
+        .form-info-button {
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid currentColor;
+            background-color: red;
+            color: rgb(231, 228, 228);
+        }
+
+        input {
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        option[value=""][disabled] {
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        
+        <div class="header">
+            <span class="header-vertical"></span>
+            <h3 class="header-info">Thông tin tài khoản <h4 class="header-info__required">(bắt buộc)</h4></h3>
+            <div class="header-hr"> </div>
+            <button class="header-button">
+                Rút gọn <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+
+        <div class="form">
+
+            <div class="form-img">
+                <div class="form-img-container">Chưa cập nhật Hình Ảnh</div>
+                <button class="form-img-button" type="">
+                    <i class="fa-regular fa-images"></i>
+                    <span>Chọn avatar</span>
+                </button>
+            </div>
+
+            <div class="form-info">
+
+                <div class="form-info-name">
+                    <label for="">Họ tên <span class="form-info-name__important">*</span></label>
+                    <input type="text" class="form-info-input form-info-name-input" placeholder="Nhập họ tên">
+                </div>
+
+                <div class="form-info-phone">
+                    <label for="">Số điện thoại <span class="form-info-name__important">*</span></label>
+                    <input type="text" class="form-info-input form-info-name-input" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-info-date">
+                    <label for="">Ngày sinh <span class="form-info-name__important">*</span></label>
+                    <div class="form-info-input form-info-date-input">
+                        <select name="" id="" class="form-info-select">
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                        <select name="" id="" class="form-info-select">
+                            <option value="">9</option>
+                            <option value="">10</option>
+                        </select>
+                        <select name="" id="" class="form-info-select">
+                            <option value="">1983</option>
+                            <option value="">1984</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-info-gender">
+                    <label for="">Giới tính <span class="form-info-name__important">*</span></label>
+                    <div class="form-info-input">
+                        <select name="" id="" class="info-gender">
+                            <option value="">Nam</option>
+                            <option value="">Nữ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-info-love">
+                    <label for="">Hôn nhân <span class="form-info-name__important">*</span></label>
+                    <div class="form-info-input">
+                        <select name="" id="" required class="info-love">
+                            <option value="" disabled selected>Chọn tình trạng hôn nhân</option>
+                            <option value="">Đã có gia đình</option>
+                            <option value="">Chưa có gia đình</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-info-city">
+                    <label for="">Tỉnh / Thành phố <span class="form-info-name__important">*</span></label>
+                    <div class="form-info-input">
+                        <select name="" id="" class="info-city">
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Nghệ An</option>
+                            <option value="">Hà Tĩnh</option>
+                            <option value="">Thanh Hóa</option>
+                            <option value="">Quảng Bình</option>
+                            <option value="">Quảng Nam</option>
+                            <option value="">Quảng Ngãi</option>
+                            <option value="">Phú Yên</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Thành phố Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-info-place">
+                    <label for="">Chỗ ở hiện tại <span class="form-info-name__important">*</span></label>
+                    <input type="text" name="" id="" class="form-info-input form-info-place-input" 
+                        placeholder="Nhập chỗ ở hiện tại">
+                </div>
+
+                <div class="form-info-save">
+                    <button class="form-info-button">
+                        <i class="fa-regular fa-floppy-disk"></i>
+                        <span>Lưu</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
