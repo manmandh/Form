@@ -31,8 +31,27 @@ if (AB + AC > BC && AB + BC > AC && AC + BC > AB) {
   let C = Math.acos((AB*AB+AC*AC-BC*BC)/(2*AB*AC));
   
   console.log("Góc A: " + (A * 180 / Math.PI) + " độ");
-  console.log("Góc B: " + (B * 180 / Math.PI) + " độ");
+  console.log("Góc B: " + (B * S180 / Math.PI) + " độ");
   console.log("Góc C: " + (C * 180 / Math.PI) + " độ");
 } else {
   console.log("3 cạnh không tạo thành tam giác");
+}
+
+window.addEventListener("load", runPage, false);
+
+
+function day() {
+  var day = document.getElementById("date");
+  if (day === "Saturday") {
+  document.write("I love Saturdays");
+  } else {
+  document.write("I wish it was Saturday");
+  }
+}
+
+function content() {
+  var text = document.getElementById("new");
+  text.textContent = "I am a paragraph that was created with JS ";
+  text.style.color = "#c0145f";
+  text.style.fontSize = "2em";
 }
